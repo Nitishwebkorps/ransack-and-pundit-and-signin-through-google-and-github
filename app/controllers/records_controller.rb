@@ -29,7 +29,7 @@ class RecordsController < ApplicationController
 
    def show
        @record = Record.find(params[:id])
-       
+       @user=User.find(params[:id])
        
    end
 
